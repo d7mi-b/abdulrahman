@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+:root {
+  --background-color: #1D1D23;
+  --card-color: #282833;
+  --header-color: #01A7C2;
+  --hover-color: #007090;
+  --font-color: #A2A1A6;
+  --white-color: #EAEBED;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: var(--white-color);
+  background: var(--header-color);
+}
+
+::selection {
+  color: var(--white-color);
+  background: var(--header-color);
+}
+
+@font-face {
+  font-family: Tajawal;
+  src: url(./fonts/Tajawal/Tajawal-Regular.ttf);
+}
+
+@font-face {
+  font-family: Tajawal-bold;
+  src: url(./fonts/Tajawal/Tajawal-Bold.ttf)
+}
+
+html[data-theme = 'dark'] {
+  --background-color: #1D1D23;
+  --card-color: #282833;
+  --header-color: #01A7C2;
+  --hover-color: #007090;
+  --font-color: #A2A1A6;
+  --white-color: #EAEBED;
+}
+
+html[data-theme = 'light'] {
+  --background-color: #EAEBED;
+  --card-color: #DFE0E1;
+  --header-color: #007090;
+  --hover-color: #01A7C2;
+  --font-color: #282833;
+  --white-color: #1D1D23;
+}
+
+body {
+  font-family: Tajawal;
+  background-color: var(--background-color);
+  color: var(--font-color);
+}
+
+.btn-container {
+  text-align: center;
+}
+
+.btn {
+  background-image: linear-gradient(45deg, var(--hover-color), var(--header-color));
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 40px 10px 0;
+  background-color: var(--hover-color);
+  font-family: Tajawal;
+  display: inline-block;
+  width: max-content;
+  color: #EAEBED;
+}
+
+.btn svg {
+  margin: 0 5px;
+}
+
+.btn:hover {
+  background-image: none;
+  transition: .2s;
+}
+
+a {
+  text-decoration: none
+}

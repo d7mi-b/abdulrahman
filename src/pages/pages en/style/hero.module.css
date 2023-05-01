@@ -1,0 +1,57 @@
+.hero {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    height: 90vh;
+}
+
+.header {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header h3 {
+    color: var(--header-color);
+    font-size: 1.8rem;
+}
+
+.header h1 {
+    color: var(--white-color);
+    font-size: 4rem;
+    font-family: Tajawal-bold;
+}
+
+.header h2 {
+    font-size: 2.2rem;
+}
+
+.img {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img img {
+    width: 90%;
+    height: 90%;
+    margin-right: auto;
+}
+
+@media (min-width: 350px) and (max-width: 992px) {
+    .hero {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .header {
+        width: 100%;
+        text-align: center;
+    }
+
+    .img {
+        width: 100%;
+    }
+}

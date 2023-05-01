@@ -1,0 +1,45 @@
+.contactUs {
+    width: 90%;
+    margin: 70px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr)
+}
+
+.contactUs header {
+    font-size: 2.3rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contactUs .contactForm form {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.contactUs .contactForm form input,
+.contactUs .contactForm form textarea {
+    background-color: var(--card-color);
+    border: none;
+    border-radius: 5px;
+    width: 90%;
+    margin: 10px auto;
+    padding: 15px 10px;
+    color: var(--font-color);
+    font-family: Tajawal;
+}
+
+.contactUs .contactForm form textarea {
+    resize: none;
+    height: 300px;
+}
+
+.contactUs .contactForm form input:focus-visible,
+.contactUs .contactForm form textarea:focus-visible {
+    outline: none;
+    outline: 1px solid var(--hover-color);
+}
