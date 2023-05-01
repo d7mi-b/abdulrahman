@@ -43,3 +43,14 @@
     outline: none;
     outline: 1px solid var(--hover-color);
 }
+
+@media (min-width: 350px) and (max-width: 992px)  {
+    .contactUs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .contactUs header {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+}
