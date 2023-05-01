@@ -9,7 +9,7 @@ const ContactUsEN = () => {
                 <h1>Contact me and get what suits your need</h1>
             </header>
             <section className={style.contactForm}>
-                <form>
+                <form action="https://fabform.io/f/AJSY0ng" method="post">
                     <input type='text' name='name' required placeholder='Name' />
                     <input type='email' name='email' required placeholder='Email' />
                     <textarea type='text' name='message' required placeholder='Message' />

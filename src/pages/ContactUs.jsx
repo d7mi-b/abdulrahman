@@ -9,7 +9,7 @@ const ContactUs = () => {
                 <h1>تواصل معي وأحصل على ما يناسب إحتياجك</h1>
             </header>
             <section className={style.contactForm}>
-                <form>
+                <form action="https://fabform.io/f/AJSY0ng" method="post">
                     <input type='text' name='name' required placeholder='الأسم' />
                     <input type='email' name='email' required placeholder='البريد الإلكتروني' />
                     <textarea type='text' name='message' required placeholder='الرسالة' />
