@@ -92,6 +92,11 @@
         margin: 20px auto 10px;
     }
 
+    .project .content .skils .skil {
+        width: auto;
+        margin: 10px;
+    }
+
     .project .btnContainer {
         text-align: center;
     }

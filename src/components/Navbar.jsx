@@ -104,7 +104,7 @@ const Navbar = () => {
                     <li>
                         <section className={style.icons}>
                             <FontAwesomeIcon icon={faSun} id="theme-toggle" onClick={handelTheme} />
-                            <FontAwesomeIcon icon={faLanguage} id='lang-toggle'/>
+                            <FontAwesomeIcon icon={faLanguage} id='lang-toggle' onClick={handelLang}/>
                         </section>
                     </li>
                 </ul>

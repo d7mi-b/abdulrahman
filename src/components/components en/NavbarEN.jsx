@@ -98,6 +98,12 @@ const NavbarEN = () => {
                         >   Contact me
                         </ScrollLink>
                     </li>
+                    <li>
+                        <section className={style.icons}>
+                            <FontAwesomeIcon icon={faSun} id="theme-toggle" onClick={handelTheme} />
+                            <FontAwesomeIcon icon={faLanguage} id='lang-toggle' onClick={handelLang}/>
+                        </section>
+                    </li>
                 </ul>
             </section>
 
