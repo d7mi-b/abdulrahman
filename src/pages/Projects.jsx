@@ -70,7 +70,7 @@ const projects = [
     {
         id: 1,
         title: 'بوابة جامعة حضرموت لخدمات الطالب',
-        body: 'منصة رقمية تقدم الخدمات للطلاب بطريقة الرقمية دون الحاجة للذهاب الى الجامعة.',
+        body: 'منصة رقمية تقدم الخدمات للطلاب بطريقة رقمية دون الحاجة للذهاب الى الجامعة مثل إستخراج بيان درجات أو تجديد القيد.',
         skils: ['HTML', 'CSS', 'React.JS', 'Node.JS', 'mongoDB'],
         link: '',
         github: 'https://github.com/d7mi-b/hadhramout-university-gate',

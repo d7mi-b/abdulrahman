@@ -10,7 +10,7 @@ const Footer = () => {
                 <p>&lt;/&gt;</p>
             </section>
             <section className={style.icons}>
-                <a href='https://wa.me/+967738632955' target='_blank'><FontAwesomeIcon icon={faWhatsappSquare} /></a>
+                <a href='https://wa.me/+967738642955' target='_blank'><FontAwesomeIcon icon={faWhatsappSquare} /></a>
                 <a href='https://www.linkedin.com/in/abdulrahman-bahyan-3448431a6/' target='_blank'><FontAwesomeIcon icon={faLinkedin} /></a>
                 <a href='https://twitter.com/d7mii_b' target='_blank'><FontAwesomeIcon icon={faTwitterSquare} /></a>
                 <a href='https://github.com/d7mi-b' target='_blank'><FontAwesomeIcon icon={faGithubSquare} /></a>

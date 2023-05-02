@@ -6,7 +6,7 @@ const Hero = () => {
             <header className={style.header}>
                 <h3>أهلًا &#128075; إسمي</h3>
                 <h1>عبدالرحمن بهيان</h1>
-                <h2>مصصم ومطور مواقع</h2>
+                <h2>مصمم ومطور مواقع</h2>
             </header>
             <section className={style.img}>
                 <img src='images/Innovation-amico.svg' alt='hero' />
