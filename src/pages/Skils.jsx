@@ -28,8 +28,8 @@ const skils = [
     },
     {
         id: 6,
-        name: 'Bootstrap',
-        skil: 'images/bootstrap.svg'
+        name: 'TypeScript',
+        skil: 'images/typescript.svg'
     },
     {
         id: 7,
@@ -43,21 +43,47 @@ const skils = [
     },
     {
         id: 9,
+        name: 'Prisma',
+        skil: 'images/prisma.svg'
+    },
+    {
+        id: 10,
+        name: 'tRPC',
+        skil: 'images/tRPC.svg'
+    },
+    {
+        id: 11,
+        name: 'Tailwindcss',
+        skil: 'images/tailwindcss.svg'
+    },
+    {
+        id: 12,
+        name: 'Bootstrap',
+        skil: 'images/bootstrap.svg'
+    },
+    
+    {
+        id: 13,
         name: 'mySQL',
         skil: 'images/mysql.svg'
     },
     {
-        id: 10,
+        id: 14,
         name: 'mongoDB',
         skil: 'images/mongodb.svg'
     },
     {
-        id: 11,
+        id: 15,
+        name: 'Supabase',
+        skil: 'images/supabase.svg'
+    },
+    {
+        id: 16,
         name: 'Adobe XD',
         skil: 'images/xd.svg'
     },
     {
-        id: 12,
+        id: 17,
         name: 'Git',
         skil: 'images/git.svg'
     }

@@ -31,8 +31,8 @@ const skils = [
     },
     {
         id: 6,
-        name: 'Bootstrap',
-        skil: 'images/bootstrap.svg'
+        name: 'TypeScript',
+        skil: 'images/typescript.svg'
     },
     {
         id: 7,
@@ -46,21 +46,47 @@ const skils = [
     },
     {
         id: 9,
+        name: 'Prisma',
+        skil: 'images/prisma.svg'
+    },
+    {
+        id: 10,
+        name: 'tRPC',
+        skil: 'images/tRPC.svg'
+    },
+    {
+        id: 11,
+        name: 'Tailwindcss',
+        skil: 'images/tailwindcss.svg'
+    },
+    {
+        id: 12,
+        name: 'Bootstrap',
+        skil: 'images/bootstrap.svg'
+    },
+    
+    {
+        id: 13,
         name: 'mySQL',
         skil: 'images/mysql.svg'
     },
     {
-        id: 10,
+        id: 14,
         name: 'mongoDB',
         skil: 'images/mongodb.svg'
     },
     {
-        id: 11,
+        id: 15,
+        name: 'Supabase',
+        skil: 'images/supabase.svg'
+    },
+    {
+        id: 16,
         name: 'Adobe XD',
         skil: 'images/xd.svg'
     },
     {
-        id: 12,
+        id: 17,
         name: 'Git',
         skil: 'images/git.svg'
     }
@@ -87,6 +113,15 @@ const projects = [
     },
     {
         id: 3,
+        title: ' نسخ موقع Quislet',
+        body: 'نسخ فكرة موقع Quizlet بشكل مبسط, فكرة الموقع هيا إنشاء مجموعات دراسية يمكن لأي شخص ان يدرس فيها وعمل تحديات بسيطة لما تتم دراسته.',
+        skils: ['HTML', 'Tailwindcss', 'Next.JS', 'Typescript', 'Prisma', 'tRPC', 'Supabase'],
+        link: 'https://quizlet-clone-h8l3cixis-d7mi-b.vercel.app/',
+        github: 'https://github.com/d7mi-b/quizlet-clone',
+        image: 'images/Quizlet-Clone.png'
+    },
+    {
+        id: 4,
         title: 'تطبيق قائمة المهام',
         body: 'تطبيق قوم بعمل قائمة مهامك اليومية ويمكنك من استخدام مصفوفة إيزنهاور لتصنيف مهامك.',
         skils: ['HTML', 'CSS', 'React.JS', 'Node.JS', 'mongoDB'],
@@ -95,7 +130,7 @@ const projects = [
         image: 'images/to do.png'
     },
     {
-        id: 4,
+        id: 5,
         title: 'مواقيت الصلاة',
         body: 'تطبيق ويب يقوم بعرض مواقيت الصلاة بناءً على الموقع الإحداثي للمستخدم.',
         skils: ['HTML', 'CSS', 'React.JS'],
