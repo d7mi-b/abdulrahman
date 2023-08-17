@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import style from './style/projects.module.css';
-import { faArrowUpRightDots, faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const skils = [
@@ -113,6 +113,15 @@ const projects = [
     },
     {
         id: 3,
+        title: 'Dawa',
+        body: 'A platform that aims to facilitate access to needy patients who have difficulty providing their necessary health needs. The platform connects them with donors who are able to help them and donate the necessary medicines for them.',
+        skils: ['HTML', 'Tailwindcss', 'Next.JS', 'Typescript', 'Prisma', 'tRPC', 'Supabase'],
+        link: 'https://dawa-gy784nf2x-d7mi-b.vercel.app/',
+        github: 'https://github.com/d7mi-b/Dawa',
+        image: 'images/Dawa.png'
+    },
+    {
+        id: 4,
         title: 'Quislet Clone',
         body: 'Quizlet clone in a simple way, the idea of the web application is to create study sets in which anyone can study and make simple challenges for what is being studied.',
         skils: ['HTML', 'Tailwindcss', 'Next.JS', 'Typescript', 'Prisma', 'tRPC', 'Supabase'],
@@ -121,7 +130,7 @@ const projects = [
         image: 'images/Quizlet-Clone.png'
     },
     {
-        id: 4,
+        id: 5,
         title: 'To Do List Application',
         body: 'An application that makes your daily to-do list and enables you to use the Eisenhower Matrix to classify your tasks.',
         skils: ['HTML', 'CSS', 'React.JS', 'Node.JS', 'mongoDB'],
@@ -130,7 +139,7 @@ const projects = [
         image: 'images/to do.png'
     },
     {
-        id: 5,
+        id: 6,
         title: 'Prayer Times',
         body: "A web application that displays prayer times based on the user's coordinate location.",
         skils: ['HTML', 'CSS', 'React.JS'],
