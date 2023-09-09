@@ -116,7 +116,7 @@ const projects = [
         title: 'منصة دواء',
         body: 'منصة تهدف الى تسهيل الوصول الى المرضى المحتاجون الذين يعانون من صعوبةٍ في توفير احتياجاتهم الصحية اللازمة, تقوم المنصة بربطهم مع متبرعين قادرين على مساعدتهم والتبرع لهم بالأدوية اللازمة لهم .',
         skils: ['HTML', 'Tailwindcss', 'Next.JS', 'Typescript', 'Prisma', 'tRPC', 'Supabase'],
-        link: 'https://dawa-gy784nf2x-d7mi-b.vercel.app/',
+        link: 'https://www.dawa.fyi/',
         github: 'https://github.com/d7mi-b/Dawa',
         image: 'images/Dawa.png'
     },

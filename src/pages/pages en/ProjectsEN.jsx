@@ -116,7 +116,7 @@ const projects = [
         title: 'Dawa',
         body: 'A platform that aims to facilitate access to needy patients who have difficulty providing their necessary health needs. The platform connects them with donors who are able to help them and donate the necessary medicines for them.',
         skils: ['HTML', 'Tailwindcss', 'Next.JS', 'Typescript', 'Prisma', 'tRPC', 'Supabase'],
-        link: 'https://dawa-gy784nf2x-d7mi-b.vercel.app/',
+        link: 'https://www.dawa.fyi/',
         github: 'https://github.com/d7mi-b/Dawa',
         image: 'images/Dawa.png'
     },
