@@ -29,17 +29,17 @@ const Navbar = () => {
         let storedLang = localStorage.getItem('lang');
         if (storedLang) {
             document.documentElement.setAttribute('lang', storedLang)
-            storedLang === 'AR' ? document.documentElement.dir = 'rtl' : document.documentElement.dir = 'ltr'
+            storedLang === 'ar' ? document.documentElement.dir = 'rtl' : document.documentElement.dir = 'ltr'
         }
 
         let currentLang = document.documentElement.getAttribute("lang");
-        let targetLang = "EN";
+        let targetLang = "en";
 
-        if (currentLang === "EN") {
-            targetLang = "AR";
+        if (currentLang === "en") {
+            targetLang = "ar";
         }
 
-        targetLang === 'AR' ? document.documentElement.dir = 'rtl' : document.documentElement.dir = 'ltr'
+        targetLang === 'ar' ? document.documentElement.dir = 'rtl' : document.documentElement.dir = 'ltr'
         document.documentElement.setAttribute('lang', targetLang)
         localStorage.setItem('lang', targetLang);
         dispatch({ type: targetLang })
