@@ -1,14 +1,14 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import style from './style/contactUs.module.css';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
+import style from '../style/contactUs.module.css';
 
 const ContactUsEN = () => {
     return (
         <article className={style.contactUs}>
-            <header>
+            <header className='center'>
                 <h1>Contact me and get what suits your need</h1>
             </header>
-            <section className={style.contactForm}>
+            <section className={`center ${style.contactForm}`}>
                 <form action="https://fabform.io/f/AJSY0ng" method="post">
                     <input type='text' name='name' required placeholder='Name' />
                     <input type='email' name='email' required placeholder='Email' />

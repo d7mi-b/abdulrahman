@@ -1,6 +1,6 @@
 .navbar {
-    padding: 20px 5%;
-    border-bottom: 1px solid var(--card-color);
+    padding: 1.25rem 5%;
+    border-bottom: 0.07rem solid var(--card-color);
     display: flex;
     justify-content: space-between;
     height: 10vh;
@@ -20,17 +20,21 @@
     display: flex;
 }
 
+.navbarList .list .logo {
+    display: none;
+}
+
 .navbarList .list li a {
-    display: block;
     color: var(--white-color);
+    display: block;
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 .625rem;
     cursor: pointer;
 }
 
 .navbarList .list li a:hover {
     color: var(--hover-color);
-    transform: translateY(-3px);
+    transform: translateY(-0.2rem);
     transition: .2s;
 }
 
@@ -46,7 +50,7 @@
 
 .icons svg {
     display: block;
-    margin: 0 5px;
+    margin: 0 .35rem;
     cursor: pointer;
 }
 
@@ -54,7 +58,7 @@
     color: var(--hover-color);
 }
 
-@media (min-width: 350px) and (max-width: 767px) {
+@media (max-width: 768px) {
     .navbar {
         height: fit-content;
     }
@@ -66,10 +70,6 @@
     .icons {
         display: none;
     }
-
-    .navbarList {
-        position: relative;
-    }
     
     .navbarList .list {
         display: none;
@@ -80,25 +80,45 @@
     }
 
     .navbarList:hover .list {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 90%;
+        height: 100vh;
+        font-size: 2rem;
         position: absolute;
         top: 0;
-        left: 0;
-        padding: 20px;
+        padding: 1.25rem;
         background-color: var(--card-color);
         text-align: center;
-        width: 200px;
-        border-radius: 5px;
+        border-radius: .3125rem;
+    }
+
+    html[dir = 'rtl'] .navbarList:hover .list {
+        left: 0;
+    }
+
+    html[dir = 'ltr'] .navbarList:hover .list {
+        right: 0;
+    }
+
+    .navbarList .list .logo {
+        display: block;
     }
 
     .navbarList .list li a {
-        margin: 15px auto;
+        margin: 0.93rem auto;
     }
 
     .navbarList .list .icons {
         display: flex;
         justify-content: center;
-        margin: 20px auto;
+        margin: 1.25rem auto;
+        font-size: 3rem;
+    }
+
+    .icons svg {
+        margin: 0 2rem;
     }
 }
 

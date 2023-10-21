@@ -1,10 +1,10 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import style from './style/about.module.css';
 import { faFileDownload } from '@fortawesome/free-solid-svg-icons';
+import style from '../style/about.module.css';
 
 const AboutEN = () => {
     return (
-        <article className={style.about}>
+        <article className={`page center ${style.about}`}>
             <header className={style.header}>
                 <h1>Who am I?</h1>
             </header>

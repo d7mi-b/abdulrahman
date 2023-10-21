@@ -4,7 +4,7 @@ import { faFileDownload } from '@fortawesome/free-solid-svg-icons';
 
 const About = () => {
     return (
-        <article className={style.about}>
+        <article className={`page center ${style.about}`}>
             <header className={style.header}>
                 <h1>من أنا؟</h1>
             </header>

@@ -1,22 +1,13 @@
 .skils {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.header {
-    color: var(--header-color);
-    font-size: 2rem;
-    text-align: center;
+    padding: 3rem 0;
 }
 
 .SkilsContainer {
     width: 90%;
-    margin: 50px auto 0;
+    margin: 3.125rem auto 0;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-row-gap: 30px;
+    grid-row-gap: 1.875rem;
 }
 
 .SkilsContainer img {

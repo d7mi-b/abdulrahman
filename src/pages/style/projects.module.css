@@ -1,23 +1,17 @@
 .projects {
-    min-height: 100vh;
-}
-
-.header {
-    color: var(--header-color);
-    font-size: 2rem;
-    text-align: center;
+    padding: 3rem 0;
 }
 
 .projectsContainer {
     width: 90%;
-    margin: 30px auto;
+    margin: 1.875rem auto;
 }
 
 .project {
     background-color: var(--card-color);
     display: flex;
-    padding: 20px;
-    margin: 20px auto;
+    padding: 1.25rem;
+    margin: 1.25rem auto;
 }
 
 .project:nth-child(even) {
@@ -26,34 +20,32 @@
 
 .project .content {
     width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 20px;
+    padding: 0 1.25rem;
 }
 
 .project h1 {
     color: var(--white-color);
     font-size: 1.5rem;
-    padding: 0 0 10px;
-    margin: 0 0 10px;
-    border-bottom: 3px solid var(--header-color);
+    padding: 0 0 .625rem;
+    margin: 0 0 .625rem;
+    border-bottom: .35rem solid var(--header-color);
 }
 
 .project p {
     font-size: 1.2rem;
-    margin: 10px 0 20px;
+    margin: .625rem 0 1.25rem;
 }
 
 .project .content .skils {
     width: 100%;
+    margin: 1rem 0 .2rem;
 }
 
 .project .content .skils .skil {
-    width: max-content;
-    height: 50px;
+    width: auto;
+    height: 3.125rem;
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 .625rem;
     filter: grayscale(1);
 }
 
@@ -63,6 +55,10 @@
 
 .project .btnContainer {
     text-align: right;
+}
+
+html[dir = "ltr"] .project .btnContainer {
+    text-align: left;
 }
 
 .project .btnGithub {
@@ -81,11 +77,21 @@
     width: 50%;
 }
 
-.project .img img {
-    width: 100%;
+@media (min-width: 1920px) {
+    .project h1 {
+        font-size: 2.5rem;
+    }
+
+    .project p {
+        font-size: 1.8rem
+    }
+
+    .project .content .skils .skil {
+        height: 4.5rem;
+    }
 }
 
-@media (min-width: 350px) and (max-width: 992px) {
+@media (max-width: 1024px) {
     .project, .project:nth-child(even) {
         flex-direction: column-reverse;
     }
@@ -93,15 +99,16 @@
     .project .content {
         width: 100%;
         text-align: center;
-        margin: 20px auto 10px;
+        margin: 1.25rem auto .625rem;
     }
 
     .project .content .skils .skil {
         width: auto;
-        margin: 10px;
+        margin: .625rem;
     }
 
-    .project .btnContainer {
+    .project .btnContainer,
+    html[dir="ltr"] .project .btnContainer {
         text-align: center;
     }
 

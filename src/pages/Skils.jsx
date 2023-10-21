@@ -56,11 +56,11 @@ const skils = [
         name: 'Tailwindcss',
         skil: 'images/tailwindcss.svg'
     },
-    {
-        id: 12,
-        name: 'Bootstrap',
-        skil: 'images/bootstrap.svg'
-    },
+    // {
+    //     id: 12,
+    //     name: 'Bootstrap',
+    //     skil: 'images/bootstrap.svg'
+    // },
     
     {
         id: 13,
@@ -91,7 +91,7 @@ const skils = [
 
 const Skils = () => {
     return (
-        <article className={style.skils}>
+        <article className={`page center ${style.skils}`}>
             <header className={style.header}>
                 <h1>مهاراتي</h1>
             </header>

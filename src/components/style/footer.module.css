@@ -11,13 +11,13 @@
 }
 
 .icons {
-    margin: 20px auto;
+    margin: 1.25rem auto;
 }
 
 .icons a {
     color: var(--background-color);
     font-size: 2.5rem;
-    margin: 0 10px;
+    margin: 0 .625rem;
 }
 
 .icons a:hover {

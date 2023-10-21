@@ -1,8 +1,9 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import style from './style/navbar.module.css';
 import { faLanguage, faSun, faBars } from '@fortawesome/free-solid-svg-icons';
-import Scroll from 'react-scroll';
 import { useLanguageContext } from '../../hooks/useLanguageContext';
+import Scroll from 'react-scroll';
+import style from '../style/navbar.module.css';
+
 
 const ScrollLink = Scroll.Link;
 
@@ -56,6 +57,9 @@ const NavbarEN = () => {
                     <FontAwesomeIcon icon={faBars} />
                 </section>
                 <ul className={style.list}>
+                    <li className={style.logo}>
+                        <p>&lt;/&gt; Abdulrahman</p>
+                    </li>
                     <li>
                         <ScrollLink 
                             to="home" 

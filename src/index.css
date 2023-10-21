@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: Tajawal;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -54,9 +55,40 @@ html[data-theme = 'light'] {
 }
 
 body {
-  font-family: Tajawal;
   background-color: var(--background-color);
   color: var(--font-color);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+}
+
+.page {
+  min-height: 100vh;
+}
+
+.page > header {
+  color: var(--header-color);
+  text-align: center;
+  font-size: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .page {
+    min-height: 60vh;
+    padding: 3rem 0;
+  }
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .btn-container {
@@ -66,20 +98,21 @@ body {
 .btn {
   background-image: linear-gradient(45deg, var(--hover-color), var(--header-color));
   border: none;
-  border-radius: 5px;
-  padding: 10px 15px;
+  border-radius: 0.315rem;
+  padding: .625rem 1.5rem;
   cursor: pointer;
   font-size: 1rem;
-  margin: 40px 10px 0;
+  margin: 2.5rem .625rem 0;
   background-color: var(--hover-color);
-  font-family: Tajawal;
   display: inline-block;
-  width: max-content;
   color: #EAEBED;
+  font-size: 1.2rem;
+  min-width: 12rem;
+  text-align: center;
 }
 
 .btn svg {
-  margin: 0 5px;
+  margin: 0 .35rem;
 }
 
 .btn:hover {
@@ -87,6 +120,9 @@ body {
   transition: .2s;
 }
 
-a {
-  text-decoration: none
+@media (max-width: 1024px) {
+  .btn {
+    width: 80%;
+    font-size: 1.5rem;
+  }
 }

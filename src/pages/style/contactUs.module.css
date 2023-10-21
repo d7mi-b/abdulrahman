@@ -1,23 +1,17 @@
 .contactUs {
     width: 90%;
-    margin: 70px auto;
+    margin: 6rem auto;
     display: grid;
-    grid-template-columns: repeat(2, 1fr)
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .contactUs header {
     font-size: 2.3rem;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .contactUs .contactForm form {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding: 1.25rem;
     text-align: center;
 }
 
@@ -25,23 +19,23 @@
 .contactUs .contactForm form textarea {
     background-color: var(--card-color);
     border: none;
-    border-radius: 5px;
+    border-radius: .35rem;
     width: 90%;
-    margin: 10px auto;
-    padding: 15px 10px;
+    margin: .625rem auto;
+    padding: .93rem .625rem;
     color: var(--font-color);
-    font-family: Tajawal;
+    font-size: 1.1rem;
 }
 
 .contactUs .contactForm form textarea {
     resize: none;
-    height: 300px;
+    height: 18.75rem;
 }
 
 .contactUs .contactForm form input:focus-visible,
 .contactUs .contactForm form textarea:focus-visible {
     outline: none;
-    outline: 1px solid var(--hover-color);
+    outline: .07rem solid var(--hover-color);
 }
 
 @media (min-width: 350px) and (max-width: 992px)  {

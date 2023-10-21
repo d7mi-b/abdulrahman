@@ -151,7 +151,7 @@ const projects = [
 
 const Projects = () => {
     return (
-        <article className={style.projects}>
+        <article className={`page ${style.projects}`}>
             <header className={style.header}>
                 <h1>أعمالي</h1>
             </header>
@@ -160,7 +160,7 @@ const Projects = () => {
                     projects.map(e => {
                         return (
                             <article className={style.project} key={e.id}>
-                                <section className={style.content}>
+                                <section className={`center ${style.content}`}>
                                     <header>
                                         <h1>{e.title}</h1>
                                     </header>

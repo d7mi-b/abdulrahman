@@ -56,6 +56,9 @@ const Navbar = () => {
                     <FontAwesomeIcon icon={faBars} />
                 </section>
                 <ul className={style.list}>
+                    <li className={style.logo}>
+                        <p>&lt;/&gt; عبدالرحمن</p>
+                    </li>
                     <li>
                         <ScrollLink 
                             to="home" 

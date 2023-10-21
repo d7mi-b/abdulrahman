@@ -5,10 +5,10 @@ import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 const ContactUs = () => {
     return (
         <article className={style.contactUs}>
-            <header>
+            <header className='center'>
                 <h1>تواصل معي وأحصل على ما يناسب إحتياجك</h1>
             </header>
-            <section className={style.contactForm}>
+            <section className={`center ${style.contactForm}`}>
                 <form action="https://fabform.io/f/AJSY0ng" method="post">
                     <input type='text' name='name' required placeholder='الأسم' />
                     <input type='email' name='email' required placeholder='البريد الإلكتروني' />

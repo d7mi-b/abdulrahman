@@ -1,4 +1,4 @@
-import style from './style/skils.module.css';
+import style from '../style/skils.module.css';
 
 const skils = [
     {
@@ -56,11 +56,11 @@ const skils = [
         name: 'Tailwindcss',
         skil: 'images/tailwindcss.svg'
     },
-    {
-        id: 12,
-        name: 'Bootstrap',
-        skil: 'images/bootstrap.svg'
-    },
+    // {
+    //     id: 12,
+    //     name: 'Bootstrap',
+    //     skil: 'images/bootstrap.svg'
+    // },
     
     {
         id: 13,
@@ -91,7 +91,7 @@ const skils = [
 
 const SkilsEN = () => {
     return (
-        <article className={style.skils}>
+        <article className={`page center ${style.skils}`}>
             <header className={style.header}>
                 <h1>My Skills</h1>
             </header>

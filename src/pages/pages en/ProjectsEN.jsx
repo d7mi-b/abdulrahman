@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import style from './style/projects.module.css';
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import style from '../style/projects.module.css';
 
 const skils = [
     {
@@ -151,7 +151,7 @@ const projects = [
 
 const ProjectsEN = () => {
     return (
-        <article className={style.projects}>
+        <article className={`page ${style.projects}`}>
             <header className={style.header}>
                 <h1>My Projects</h1>
             </header>
@@ -160,7 +160,7 @@ const ProjectsEN = () => {
                     projects.map(e => {
                         return (
                             <article className={style.project} key={e.id}>
-                                <section className={style.content}>
+                                <section className={`center ${style.content}`}>
                                     <header>
                                         <h1>{e.title}</h1>
                                     </header>
