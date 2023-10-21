@@ -59,3 +59,9 @@ html[dir = "ltr"] .hero .header {
         width: 100%;
     }
 }
+
+@media (max-width: 768px) {
+    html[dir="ltr"] .hero .header h1 {
+        font-size: 3rem
+    }
+}
