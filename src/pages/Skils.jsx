@@ -99,7 +99,9 @@ const Skils = () => {
                 {
                     skils.map(e => {
                         return(
-                            <img src={e.skil} id={e.id} title={e.name} alt={e.name} key={e.id} />
+                            <section className={`center`} id={e.id} title={e.name} key={e.id}>
+                                <img src={e.skil} alt={e.name} />
+                            </section>
                         )
                     })
                 }

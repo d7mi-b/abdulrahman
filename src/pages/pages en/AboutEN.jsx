@@ -10,9 +10,9 @@ const AboutEN = () => {
             </header>
             <section className={style.content}>
                 <p> 
-                    <span>Hi I'm Abdulrahman Bahyan</span> computer engineering and web developer with a
-                    knowledge in front-end, back-end and database, My objective is simply to be the best web developer that I can be and to contribute to the technology industry all that I know and can do. I am dedicated to perfecting my craft by learning from more
-                    seasoned developers.
+                    <span>Hi I'm Abdulrahman Bahyan</span> a computer engineer and passionate website developer, 
+                    I have experience in developing the front-end, back-end, and dealing with databases, 
+                    I always strive to develop myself and learn new in my field and I make sure to carry out my work with professional way.
                 </p>
             </section>
             <section className={`btn-container`}>

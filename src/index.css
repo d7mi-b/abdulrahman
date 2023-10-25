@@ -60,8 +60,15 @@ body {
 }
 
 a {
+  font-family: Tajawal-bold;
+  font-size: 500;
   text-decoration: none;
   color: inherit;
+}
+
+button {
+  font-family: Tajawal-bold;
+  font-size: 500;
 }
 
 img {
