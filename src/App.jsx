@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react"
 import { Element } from 'react-scroll'
 import Footer from "./components/Footer"
 import Navbar from "./components/Navbar"
