@@ -1,18 +1,20 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import style from './style/about.module.css';
 import { faFileDownload } from '@fortawesome/free-solid-svg-icons';
+import { useTranslation } from 'react-i18next';
 
 const About = () => {
+    const { t } = useTranslation();
+
     return (
         <article className={`page center ${style.about}`}>
             <header className={style.header}>
-                <h1>من أنا؟</h1>
+                <h1>{ t("who am i") }</h1>
             </header>
             <section className={style.content}>
                 <p> 
-                    <span>أهلًا أنا عبدالرحمن بهيان</span> مهندس حاسوب ومطور مواقع شغوف, 
-                    أتمتع بالخبرة في تطوير الواجهات الأمامية والخلفية للمواقع والتعامل مع قواعد البيانات،
-                    أسعى دائمًا لتطوير نفسي وتعلم الجديد في مجالي وأحرص على تنفيذ أعمالي باحترافية عالية.
+                    <span>{ t('hi') } { t('I') } { t('name') } </span>
+                    { t('about') }
                 </p>
             </section>
             <section className={`btn-container`}>
@@ -21,7 +23,8 @@ const About = () => {
                     href='Abdulrahman Bahyan.pdf'
                     download
                 >
-                    تحميل السيرة الذاتية <FontAwesomeIcon icon={faFileDownload} />
+                    { t('download') } { t('cv') }
+                    <FontAwesomeIcon icon={faFileDownload} />
                 </a>
             </section>
         </article>

@@ -6,58 +6,35 @@ import ContactUs from "./pages/ContactUs"
 import Hero from "./pages/Hero"
 import Projects from "./pages/Projects"
 import Skils from "./pages/Skils"
-import NavbarEN from "./components/components en/NavbarEN"
-import HeroEN from './pages/pages en/HeroEN'
-import AboutEN from './pages/pages en/AboutEN'
-import SkilsEN from './pages/pages en/SkilsEN'
-import ProjectsEN from './pages/pages en/ProjectsEN'
-import ContactUsEN from './pages/pages en/ContactUsEN'
-import FooterEN from "./components/components en/FooterEN"
-import { useLanguageContext } from "./hooks/useLanguageContext"
 
 function App() {
-  const { lang } = useLanguageContext();
 
   return (
     <div className="App">
 
-      {
-        lang === 'AR' ? <Navbar /> : <NavbarEN />
-      }
+      <Navbar />
 
       <Element id='home' name='home'>
-        {
-          lang === 'AR' ? <Hero /> : <HeroEN />
-        }
+        <Hero />
       </Element>
 
       <Element id="about" name="about">
-        {
-          lang === 'AR' ? <About /> : <AboutEN />
-        }
+        <About />
       </Element>
 
       <Element id="skills" name="skills">
-        {
-          lang === 'AR' ? <Skils /> : <SkilsEN />
-        }
+        <Skils />
       </Element>
 
       <Element id="projects" name="projects">
-        {
-          lang === 'AR' ? <Projects /> : <ProjectsEN />
-        }
+        <Projects />
       </Element>
       
       <Element id="ContactMe" name="contactMe">
-        {
-          lang === 'AR' ? <ContactUs /> : <ContactUsEN />
-        }
+        <ContactUs />
       </Element>
       
-      {
-        lang === 'AR' ? <Footer /> : <FooterEN />
-      }
+      <Footer />
     </div>
   )
 }

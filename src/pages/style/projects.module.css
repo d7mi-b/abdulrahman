@@ -4,14 +4,16 @@
 
 .projectsContainer {
     width: 90%;
-    margin: 1.875rem auto;
+    margin: 2rem auto;
 }
 
 .project {
     background-color: var(--card-color);
     display: flex;
-    padding: 1.25rem;
-    margin: 1.25rem auto;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+    margin: 1.5rem auto;
 }
 
 .project:nth-child(even) {
@@ -20,25 +22,27 @@
 
 .project .content {
     width: 50%;
-    padding: 0 1.25rem;
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .project h1 {
     color: var(--white-color);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding: 0 0 .625rem;
     margin: 0 0 .625rem;
     border-bottom: .35rem solid var(--header-color);
 }
 
 .project p {
-    font-size: 1.2rem;
-    margin: .625rem 0 1.25rem;
+    margin: 1rem 0 2rem;
 }
 
 .project .content .skils {
     width: 100%;
-    margin: 1rem 0 .2rem;
+    margin: 1rem 0;
 }
 
 .project .content .skils .skil {

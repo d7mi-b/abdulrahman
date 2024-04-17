@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import style from './style/skils.module.css';
 
 const skils = [
@@ -43,57 +44,79 @@ const skils = [
     },
     {
         id: 9,
+        name: 'PHP',
+        skil: 'images/php.svg'
+    },
+    {
+        id: 10,
+        name: 'Laravel',
+        skil: 'images/laravel.svg'
+    },
+    {
+        id: 11,
         name: 'Prisma',
         skil: 'images/prisma.svg'
     },
     {
-        id: 10,
+        id: 12,
         name: 'tRPC',
         skil: 'images/tRPC.svg'
     },
     {
-        id: 11,
+        id: 13,
         name: 'Tailwindcss',
         skil: 'images/tailwindcss.svg'
     },
     // {
-    //     id: 12,
+    //     id: 14,
     //     name: 'Bootstrap',
     //     skil: 'images/bootstrap.svg'
     // },
     
     {
-        id: 13,
+        id: 15,
         name: 'mySQL',
         skil: 'images/mysql.svg'
     },
     {
-        id: 14,
+        id: 16,
+        name: 'PostgreSQL',
+        skil: 'images/postgresql.svg'
+    },
+    {
+        id: 17,
         name: 'mongoDB',
         skil: 'images/mongodb.svg'
     },
     {
-        id: 15,
+        id: 18,
         name: 'Supabase',
         skil: 'images/supabase.svg'
     },
     {
-        id: 16,
+        id: 19,
         name: 'Adobe XD',
         skil: 'images/xd.svg'
     },
     {
-        id: 17,
+        id: 20,
+        name: 'Figma',
+        skil: 'images/figma.svg'
+    },
+    {
+        id: 21,
         name: 'Git',
         skil: 'images/git.svg'
     }
 ];
 
 const Skils = () => {
+    const { t } = useTranslation();
+
     return (
         <article className={`page center ${style.skils}`}>
             <header className={style.header}>
-                <h1>مهاراتي</h1>
+                <h1>{ t('my skills') }</h1>
             </header>
             <section className={style.SkilsContainer}>
                 {

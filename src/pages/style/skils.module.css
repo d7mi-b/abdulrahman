@@ -5,10 +5,11 @@
 .SkilsContainer {
     width: 90%;
     margin: 3.125rem auto 0;
-    display: grid;
-    grid-template-columns: repeat(6, 11.5rem);
-    gap: 1.5rem;
-    row-gap: 1.875rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
 }
 
 .SkilsContainer section {
@@ -19,7 +20,7 @@
 
 .SkilsContainer img {
     display: block;
-    width: 60%;
+    width: 7rem;
     margin: auto;
     filter: grayscale(1) drop-shadow(0 0 1px var(--white-color));
 }

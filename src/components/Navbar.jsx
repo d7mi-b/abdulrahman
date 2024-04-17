@@ -1,19 +1,17 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import style from './style/navbar.module.css';
-import { faBars, faLanguage, faSun } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faLanguage, faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 import Scroll from 'react-scroll';
-import { useLanguageContext } from '../hooks/useLanguageContext';
+import { useTranslation } from 'react-i18next';
+import { useEffect, useState } from 'react';
 
 const ScrollLink = Scroll.Link;
 
 const Navbar = () => {
-    const { dispatch } = useLanguageContext();
+    const { t, i18n } = useTranslation();
+    const [ theme, setTheme ] = useState('dark');
 
-    const handelTheme = (e) => {
-        let storedTheme = localStorage.getItem('theme') || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
-        if (storedTheme)
-            document.documentElement.setAttribute('data-theme', storedTheme)
-    
+    const handelTheme = () => {    
         let currentTheme = document.documentElement.getAttribute("data-theme");
         let targetTheme = "light";
     
@@ -23,32 +21,37 @@ const Navbar = () => {
     
         document.documentElement.setAttribute('data-theme', targetTheme)
         localStorage.setItem('theme', targetTheme);
+        setTheme(targetTheme);
     }
 
-    const handelLang = (e) => {
-        let storedLang = localStorage.getItem('lang');
-        if (storedLang) {
-            document.documentElement.setAttribute('lang', storedLang)
-            storedLang === 'AR' ? document.documentElement.dir = 'rtl' : document.documentElement.dir = 'ltr'
+    const handelLang = () => {
+        let lang = i18n.language;
+
+        if (lang === 'ar') {
+            i18n.changeLanguage('en');
+            lang = "en";
+        }
+        else {
+            i18n.changeLanguage("ar");
+            lang = 'ar';
         }
 
-        let currentLang = document.documentElement.getAttribute("lang");
-        let targetLang = "EN";
-
-        if (currentLang === "EN") {
-            targetLang = "AR";
-        }
-
-        targetLang === 'AR' ? document.documentElement.dir = 'rtl' : document.documentElement.dir = 'ltr'
-        document.documentElement.setAttribute('lang', targetLang)
-        localStorage.setItem('lang', targetLang);
-        dispatch({ type: targetLang })
+        lang === 'ar' ? document.documentElement.dir = 'rtl' : document.documentElement.dir = 'ltr'
+        document.documentElement.setAttribute('lang', lang);
     }
+
+    useEffect(() => {
+        let storedTheme = localStorage.getItem('theme') || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        if (storedTheme) {
+            document.documentElement.setAttribute('data-theme', storedTheme)
+            setTheme(storedTheme);
+        }
+    }, [])
 
     return (
         <nav className={style.navbar}>
             <section className={style.logo}>
-                <p>&lt;/&gt; عبدالرحمن</p>
+                <p>&lt;/&gt; { t("Abdulrahman") }</p>
             </section>
 
             <section className={style.navbarList}>
@@ -57,7 +60,7 @@ const Navbar = () => {
                 </section>
                 <ul className={style.list}>
                     <li className={style.logo}>
-                        <p>&lt;/&gt; عبدالرحمن</p>
+                        <p>&lt;/&gt; { t("Abdulrahman") }</p>
                     </li>
                     <li>
                         <ScrollLink 
@@ -65,7 +68,7 @@ const Navbar = () => {
                             spy={true} 
                             smooth={true} 
                             duration={500} 
-                        >   الرئيسية
+                        >   { t("home") }
                         </ScrollLink>
                     </li>
                     <li>
@@ -74,7 +77,7 @@ const Navbar = () => {
                             spy={true} 
                             smooth={true} 
                             duration={500} 
-                        >   من أنا؟
+                        >   { t("who am i") }
                         </ScrollLink>
                     </li>
                     <li>
@@ -83,7 +86,7 @@ const Navbar = () => {
                             spy={true} 
                             smooth={true} 
                             duration={500} 
-                        >   مهاراتي
+                        >   { t("my skills") }
                         </ScrollLink>
                     </li>
                     <li>
@@ -92,7 +95,7 @@ const Navbar = () => {
                             spy={true} 
                             smooth={true} 
                             duration={500} 
-                        >   أعمالي
+                        >   { t("my works") }
                         </ScrollLink>
                     </li>
                     <li>   
@@ -101,12 +104,12 @@ const Navbar = () => {
                             spy={true} 
                             smooth={true} 
                             duration={500} 
-                        >   تواصل معي
+                        >   { t("contact") }
                         </ScrollLink>
                     </li>
                     <li>
                         <section className={style.icons}>
-                            <FontAwesomeIcon icon={faSun} id="theme-toggle" onClick={handelTheme} />
+                            <FontAwesomeIcon icon={theme === 'dark' ? faSun : faMoon} id="theme-toggle" onClick={handelTheme} />
                             <FontAwesomeIcon icon={faLanguage} id='lang-toggle' onClick={handelLang}/>
                         </section>
                     </li>
@@ -114,7 +117,7 @@ const Navbar = () => {
             </section>
 
             <section className={style.icons}>
-                <FontAwesomeIcon icon={faSun} id="theme-toggle" onClick={handelTheme} />
+            <FontAwesomeIcon icon={theme === 'dark' ? faSun : faMoon} id="theme-toggle" onClick={handelTheme} />
                 <FontAwesomeIcon icon={faLanguage} id='lang-toggle' onClick={handelLang} />
             </section>
         </nav>

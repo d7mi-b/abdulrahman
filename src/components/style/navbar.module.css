@@ -4,6 +4,7 @@
     display: flex;
     justify-content: space-between;
     height: 10vh;
+    align-items: center;
 }
 
 .logo {
@@ -30,6 +31,7 @@
     text-decoration: none;
     margin: 0 .625rem;
     cursor: pointer;
+    font-family: Tajawal;
 }
 
 .navbarList .list li a:hover {
