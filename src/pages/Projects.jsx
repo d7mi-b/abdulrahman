@@ -145,7 +145,7 @@ const projects = [
         skils: ['HTML', 'CSS', 'Laravel', 'mySQL'],
         link: 'https://www.arabwdos.com/',
         github: '',
-        image: 'images/arab-ware-dos.png'
+        image: 'images/Arab-Ware-Dos.png'
     },
     {
         id: 6,
