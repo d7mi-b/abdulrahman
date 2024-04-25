@@ -13,7 +13,7 @@ const About = () => {
             </header>
             <section className={style.content}>
                 <p> 
-                    <span>{ t('hi') } { t('I') } { t('name') } </span>
+                    <span>{ t('hi') } { t('I') } { t('Abdulrahman Bahyan') } </span>
                     { t('about') }
                 </p>
             </section>
