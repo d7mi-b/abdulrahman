@@ -67,7 +67,7 @@ const Navbar = () => {
                             to="home" 
                             spy={true} 
                             smooth={true} 
-                            duration={500} 
+                            duration={500}
                         >   { t("home") }
                         </ScrollLink>
                     </li>
